@@ -26,7 +26,7 @@ abstract class AbstractECDHAESKW implements KeyAgreementWithKeyWrapping
         return self::MODE_WRAP;
     }
 
-    abstract protected function getWrapper(): WrapperInterface;
+    abstract protected function getWrapper();
 
     abstract protected function getKeyLength(): int;
 }
